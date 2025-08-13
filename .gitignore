@@ -8,3 +8,5 @@ node_modules
 tmp
 knowly.egg-info/ python_htmx_daisyui.egg-info/
 *.egg-info/
+.air.tmp/
+vite.config.mjs.timestamp-1755075879616-a277a3cb145578.mjs

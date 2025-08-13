@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
+
 @plugin "daisyui" {
   themes: all;
-  logs: true;
 }
+
+@import "./themes/gpt.css";
+@import "./themes/chat.css";

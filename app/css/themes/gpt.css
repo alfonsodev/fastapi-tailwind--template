@@ -1,0 +1,64 @@
+
+  @plugin "daisyui/theme" {
+    name: "gpt";
+    default: false;
+    prefersdark: false;
+    color-scheme: "dark";
+  
+    --color-base-100: oklch(22% 0.004 255); /* #343541-ish */
+    --color-base-200: oklch(17% 0.004 255);
+    --color-base-300: oklch(14% 0.004 255);
+    --color-base-content: oklch(94% 0.004 255);
+  
+    --color-primary: oklch(70% 0.14 165);
+    --color-primary-content: oklch(98% 0.01 165);
+  
+    --color-secondary: oklch(75% 0.13 165);
+    --color-secondary-content: oklch(98% 0.01 165);
+  
+    --color-accent: oklch(65% 0.19 250);
+    --color-accent-content: oklch(95% 0.02 250);
+  
+    --color-neutral: oklch(14% 0.004 255);
+    --color-neutral-content: oklch(92% 0.004 255);
+  
+    --color-info: oklch(74% 0.16 232);
+    --color-info-content: oklch(29% 0.066 243);
+
+    --color-success: oklch(76% 0.177 163);
+    --color-success-content: oklch(37% 0.077 169);
+
+    --color-warning: oklch(82% 0.189 84);
+    --color-warning-content: oklch(41% 0.112 46);
+
+    --color-error: oklch(71% 0.194 13);
+    --color-error-content: oklch(27% 0.105 12);
+  
+    --radius-selector: 0.5rem;
+    --radius-field: 0.25rem;
+
+    --radius-box: 1rem;
+    --size-selector: 0.25rem;
+
+    --size-field: 0.25rem;
+
+    --border: 1px;
+    --depth: 1;
+    --noise: 0;
+
+  }
+  @layer components {
+    [data-theme="gpt"] .chat-bubble::before { content: none !important; }
+    [data-theme="gpt"] .chat-start .chat-bubble {
+      border-end-start-radius: var(--rounded-field, 1rem);
+    }
+    [data-theme="gpt"] .chat-end .chat-bubble {
+      border-end-end-radius: var(--rounded-field, 1rem);
+    }
+  }
+ 
+  @layer utilities {
+    [data-theme="gpt"] .chat-bubble {
+      border-radius: var(--rounded-field, 1rem) !important; /* restore all 4 corners */
+    }
+  }

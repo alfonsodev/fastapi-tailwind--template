@@ -7,10 +7,10 @@ tmp_dir = ".air.tmp"
 
 [build]
   args_bin = []
+  cmd = "npx vite build"
   full_bin = "uv run fastapi dev app/main.py"
-  cmd = "/usr/bin/true"
 
-  delay = 200
+  delay =500 
   exclude_dir = [".venv", ".vscode", "*.egg-info", "**/__pycache__", "app/dist", "node_modules", ".git"]
   exclude_file = []
   # exclude_regex = ["_test.go"]

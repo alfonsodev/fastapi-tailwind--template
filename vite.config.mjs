@@ -24,7 +24,7 @@ export default defineConfig(({ mode }) => {
         input: {
           // Entry point: app/js/src/main.js
           // The output file will be app/static/js/main.js
-          main: resolve(__dirname, "js/main.js"),
+          main: resolve(__dirname, "app/js/main.js"),
           // If you have other independent JS files you want to bundle, add them here:
           // example: resolve(__dirname, 'app/js/example.js'),
         },
