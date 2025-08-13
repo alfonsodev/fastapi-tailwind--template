@@ -1,0 +1,27 @@
+{
+    "name": "fastapi",
+    "version": "1.0.0",
+    "description": "FastAPI",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev:js": "vite build --watch --mode development",
+      "build:js": "vite build --mode production"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@tailwindcss/cli": "^4.1.5",
+      "@tailwindcss/vite": "^4.1.5",
+      "daisyui": "^5.0.35",
+      "htmx.org": "^2.0.4",
+      "hyperscript.org": "^0.9.14",
+      "tailwindcss": "^4.1.5"
+    },
+    "devDependencies": {
+      "@types/alpinejs": "^3.13.11",
+      "vite": "^5.4.19",
+      "vite-plugin-static-copy": "^3.0.0"
+    }
+  }

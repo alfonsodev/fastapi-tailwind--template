@@ -1,0 +1,10 @@
+.venv/
+.vscode/
+**/__pycache__/
+**/dist/
+.env
+node_modules
+.DS_Store
+tmp
+knowly.egg-info/ python_htmx_daisyui.egg-info/
+*.egg-info/

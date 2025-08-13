@@ -1,0 +1,10 @@
+[tools]
+air = "latest" # https://github.com/air-verse/air  -- used for browser live reload during development
+go = "1.25" 
+python = "3.13" 
+
+[tasks.dev]
+run = "air -c .air.toml"
+
+[tasks.install]
+run = ["source .venv/bin/activate", "uv sync"]
