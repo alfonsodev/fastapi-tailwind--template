@@ -1,9 +1,31 @@
 @import "tailwindcss";
 
-
 @plugin "daisyui" {
   themes: all;
 }
 
 @import "./themes/gpt.css";
 @import "./themes/chat.css";
+
+/* Fixed sidebar styles */
+#left-sidebar.expanded {
+  width: 250px !important;
+}
+
+#left-sidebar.expanded #collapse-sidebar {
+  opacity: 1;
+}
+
+#left-sidebar.expanded #expand-sidebar {
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .drawer-with-left-sidebar {
+    margin-left: 50px;
+  }
+
+  .drawer-with-left-sidebar.sidebar-expanded {
+    margin-left: 250px;
+  }
+}
