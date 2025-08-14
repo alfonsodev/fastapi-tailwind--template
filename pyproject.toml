@@ -10,7 +10,10 @@ dependencies = [
     "jinja2>=3.1.0",
 ]
 
-
+[dependency-groups]
+dev = [
+    "uvicorn>=0.34.2",
+]
 
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]

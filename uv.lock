@@ -363,6 +363,11 @@ dependencies = [
     { name = "python-multipart" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "uvicorn" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "fastapi", extras = ["cli", "standard"], specifier = ">=0.115.12" },
@@ -371,6 +376,9 @@ requires-dist = [
     { name = "jinja2", specifier = ">=3.1.0" },
     { name = "python-multipart", specifier = ">=0.0.20" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "uvicorn", specifier = ">=0.34.2" }]
 
 [[package]]
 name = "python-multipart"
